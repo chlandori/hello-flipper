@@ -70,6 +70,16 @@ ufbt update
 You should see it deploy the SDK and extract the toolchain, e.g.
 `Deploying SDK for f7` → `Using version: 1.4.3` → `Downloading Windows toolchain..done!`.
 
+To build against a specific Flipper firmware version, update uFBT to that firmware
+branch before building. For example:
+
+```powershell
+ufbt update --branch=0.88.0
+```
+
+Replace `0.88.0` with the version you need. Find available versions on the
+[Flipper Zero Firmware Update](https://update.flipperzero.one/builds/firmware/) page.
+
 ### 4. Generate the VS Code configuration
 
 ```powershell
